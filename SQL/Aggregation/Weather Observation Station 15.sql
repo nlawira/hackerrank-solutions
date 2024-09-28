@@ -1,0 +1,6 @@
+SELECT
+    ROUND(LONG_W,4)
+FROM
+    Station
+WHERE
+    LAT_N = (SELECT max(LAT_N) FROM Station WHERE LAT_N < 137.2345);
