@@ -1,0 +1,4 @@
+SELECT
+    ROUND(ABS(max(LONG_W)-min(LONG_W))+ABS(MAX(LAT_N)-MIN(LAT_N)),4)
+FROM
+    STATION;
